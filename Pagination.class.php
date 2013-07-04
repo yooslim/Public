@@ -1,5 +1,5 @@
 <?php
-/* YOo Slim | 2013 | https://bitbucket.org/YOoSlim */
+/* YOo Slim | 2013 | https://github.com/YOoSlim */
 
 class Pagination {
 	const DEFAULT_CURRENT_PAGE = 1;
