@@ -1,7 +1,7 @@
 <?php
 // Inclusion des classes nécéssaire
 require_once 'UpdateOrInsert.class.php';
-//require_once 'bdd.php';
+require_once 'bdd.php';
 
 // Les données
 $mysqlDatas = array('id1', 'id34', 'id3', 'id7', 'id23'); // On a seulement besoin des valeurs de la clé primaire
@@ -25,7 +25,7 @@ $insReq = $obj->getUpdateQuery();
 // Aperçu des requetes
 var_dump($upReq);
 var_dump($insReq);
-die();
+
 // Execution des requetes via PDO
 if($upReq != null) {
 	$req = $db->prepare($upReq);
